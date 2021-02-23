@@ -13,23 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/test_first', function () {
-    return view('sula');
-});
 
-Route::get('/test_last', function () {
-    return view('kair');
-});
-
-Route::get('/test_id', function () {
-    return view('num');
-});
-
-Route::get('/post/{id}/{age}', function ($id,$age) {
-    return "Your Id is: ".$id." Your age is: ".$age." GOOD DAY,SIR!Buy buy";
-});
+Route::get('/post/{id}','StudentsController@operation');
 
