@@ -30,6 +30,6 @@ Route::get('/test_id', function () {
 });
 
 Route::get('/post/{id}/{age}', function ($id,$age) {
-    return "Your id is: ".$id." Your age is: ".$age;
+    return "Your Id is: ".$id." Your age is: ".$age." GOOD DAY,SIR";
 });
 
